@@ -1,3 +1,7 @@
+#Problema 1
+#Fase 5 - Evalucaion final
+#Autor: Hernan D Gomez R
+#Este programa analiza datos de sesiones de clientes para determinar su nivel de compromiso
 sesiones = [
     [101, 200, 10],
     [102, 50, 2],
