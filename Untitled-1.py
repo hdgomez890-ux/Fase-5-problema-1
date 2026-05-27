@@ -1,0 +1,35 @@
+sesiones = [
+    [101, 200, 10],
+    [102, 50, 2],
+    [103, 120, 6],
+    [104, 300, 12],
+    [105, 80, 1]
+]
+
+# 2. Función para calcular el nivel de compromiso
+def calcular_compromiso(duracion, clics):
+    if duracion > 180 and clics > 8:
+        return "Alto"
+    elif duracion < 60 or clics < 3:
+        return "Bajo"
+    else:
+        return "Medio"
+
+# 3. Generación del informe
+print("===================================")
+print(" INFORME DE COMPROMISO DE CLIENTES ")
+print("===================================")
+
+# 4. Recorrido de la matriz
+for sesion in sesiones:
+    id_cliente = sesion[0]
+    duracion = sesion[1]
+    clics = sesion[2]
+
+    # Llamado a la función
+    clasificacion = calcular_compromiso(duracion, clics)
+
+    # Mostrar resultado
+    print(f"Cliente {id_cliente}: {clasificacion}")
+
+print("===================================")
